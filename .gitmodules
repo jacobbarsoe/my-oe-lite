@@ -1,0 +1,12 @@
+[submodule "meta/core"]
+	path = meta/core
+	url = https://github.com/oe-lite/core.git
+[submodule "meta/base"]
+	path = meta/base
+	url = https://github.com/oe-lite/base.git
+[submodule "src/linux"]
+	path = src/linux
+	url = https://github.com/raspberrypi/linux.git
+[submodule "lib/urlgrabber"]
+	path = lib/urlgrabber
+	url = git://oe-lite.org/urlgrabber.git
