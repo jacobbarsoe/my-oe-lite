@@ -10,3 +10,6 @@
 [submodule "lib/urlgrabber"]
 	path = lib/urlgrabber
 	url = git://oe-lite.org/urlgrabber.git
+[submodule "meta/bcm2835"]
+	path = meta/bcm2835
+	url = git@github.com:oe-lite-rpi/bcm2835.git
