@@ -1,0 +1,16 @@
+inherit rootfs image_bom image_passwd image_fstab image_makedevs
+
+DEFAULT_PREFERENCE="12"
+
+COMPATIBLE_MACHINES="rpi"
+
+PROVIDES_${PN} += "rootfs"
+
+RDEPENDS = "\
+	 base-hostname \
+	 base-passwd \
+	 netbase \
+	 fstab dropbear \
+	 e2fsprogs-mke2fs \
+	 kernel-modules \
+	 "
