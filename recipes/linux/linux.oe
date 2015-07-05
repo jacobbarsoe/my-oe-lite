@@ -1,0 +1,14 @@
+DESCRIPTION = "Linux kernel from manifest src directory"
+
+inherit kernel
+
+SRC_URI = "git://${TOPDIR}/src/linux;${SRC_REV};protocol=file"
+S = "${SRCDIR}/linux"
+
+RECIPE_FLAGS = "linux_src"
+COMPATIBLE_IF_FLAGS = "linux_src"
+SRC_REV = "branch=HEAD;dirty"
+
+RECIPE_PRIORITY = "1"
+
+RDEPENDS_${PN} += "${PN}-dtb"
